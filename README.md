@@ -1,6 +1,10 @@
 # BashPod
 
-BashPod is designed to run containers using Linux primitives such as namespaces and cgroups. It is written in Bash with no dependencies.
+BashPod is designed to run containers using Linux primitives like namespaces and cgroups. It is written in Bash with no dependencies.
+
+
+> [!WARNING]  
+> BashPod is a container runtime developed for experimentation with Linux primitives. It lacks many of the security features required for production environments.
 
 ## Features
 - Process isolation using Linux namespaces.
@@ -28,3 +32,15 @@ This runs a Bash shell in an isolated environment using the specified root files
 ## Requirements
 - Bash
 - Linux with support for namespaces and cgroups
+- [util-linux package](https://github.com/util-linux/util-linux)
+
+## Roadmap
+- Add cgroup and limits support
+- Internet support 
+- Persistent containers
+- Support for pulling images from OCI registries 
+
+## Resources
+- [Liz Rice’s Containers from Scratch](https://www.youtube.com/watch?v=8fi7uSYlOdc)
+- [Cgroup v2 Documentation](https://www.kernel.org/doc/html/latest/admin-guide/cgroup-v2.html)
+- [Google Shell Style Guide](https://google.github.io/styleguide/shellguide.html#s1.1-which-shell-to-use)
