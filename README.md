@@ -35,10 +35,11 @@ This runs a Bash shell in an isolated environment using the specified root files
 - [util-linux package](https://github.com/util-linux/util-linux)
 
 ## Roadmap
-- Add cgroup and limits support
-- Internet support 
-- Persistent containers
-- Support for pulling images from OCI registries 
+- [X] Custom cgroup support
+- [ ] Internet support inside the container isolated from the host
+- [ ] Volumes mount support
+- [ ] Detached and Persistent containers
+- [ ] Support for pulling images from OCI registries 
 
 ## Resources
 - [Liz Rice’s Containers from Scratch](https://www.youtube.com/watch?v=8fi7uSYlOdc)
